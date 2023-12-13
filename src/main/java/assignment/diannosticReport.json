@@ -1,0 +1,54 @@
+{
+
+  "fullUrl": "urn:uuid:3ee9caf1-0674-ebbb-5620-9770cfe7560f",
+  "resource": {
+    "resourceType": "DiagnosticReport",
+    "id": "3ee9caf1-0674-ebbb-5620-9770cfe7560f",
+    "meta": {
+      "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note" ]
+    },
+    "status": "final",
+    "category": [ {
+      "coding": [ {
+        "system": "http://loinc.org",
+        "code": "34117-2",
+        "display": "History and physical note"
+      }, {
+        "system": "http://loinc.org",
+        "code": "51847-2",
+        "display": "Evaluation+Plan note"
+      } ]
+    } ],
+    "code": {
+      "coding": [ {
+        "system": "http://loinc.org",
+        "code": "34117-2",
+        "display": "History and physical note"
+      }, {
+        "system": "http://loinc.org",
+        "code": "51847-2",
+        "display": "Evaluation+Plan note"
+      } ]
+    },
+    "subject": {
+      "reference": "urn:uuid:8c95253e-8ee8-9ae8-6d40-021d702dc78e"
+    },
+    "encounter": {
+      "reference": "urn:uuid:57ae6663-bd77-35a3-f501-3b43afec0203"
+    },
+    "effectiveDateTime": "1975-11-10T02:00:18+00:00",
+    "issued": "1975-11-10T02:00:18.291+00:00",
+    "performer": [ {
+      "reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999914519",
+      "display": "Dr. Wilmer32 Heidenreich818"
+    } ],
+    "presentedForm": [ {
+      "contentType": "text/plain; charset=utf-8",
+      "data": "CjE5NzUtMTEtMTAKCiMgQ2hpZWYgQ29tcGxhaW50Ck5vIGNvbXBsYWludHMuCgojIEhpc3Rvcnkgb2YgUHJlc2VudCBJbGxuZXNzCkFhcm9uNjk3CiBpcyBhIDMxIHllYXItb2xkIG5vbi1oaXNwYW5pYyB3aGl0ZSBtYWxlLiBQYXRpZW50IGhhcyBhIGhpc3Rvcnkgb2YgZnVsbC10aW1lIGVtcGxveW1lbnQgKGZpbmRpbmcpLCBzb2NpYWwgaXNvbGF0aW9uIChmaW5kaW5nKSwgc3RyZXNzIChmaW5kaW5nKS4KCiMgU29jaWFsIEhpc3RvcnkKUGF0aWVudCBpcyBtYXJyaWVkLiBQYXRpZW50IGlzIGFuIGFjdGl2ZSBzbW9rZXIgYW5kIGlzIGFuIGFsY29ob2xpYy4KIFBhdGllbnQgaWRlbnRpZmllcyBhcyBoZXRlcm9zZXh1YWwuCgpQYXRpZW50IGNvbWVzIGZyb20gYSBtaWRkbGUgc29jaW9lY29ub21pYyBiYWNrZ3JvdW5kLgogUGF0aWVudCBoYXMgY29tcGxldGVkIHNvbWUgY29sbGVnZSBjb3Vyc2VzLgpQYXRpZW50IGN1cnJlbnRseSBoYXMgTk8gSU5TVVJBTkNFLgoKIyBBbGxlcmdpZXMKTm8gS25vd24gQWxsZXJnaWVzLgoKIyBNZWRpY2F0aW9ucwpObyBBY3RpdmUgTWVkaWNhdGlvbnMuCgojIEFzc2Vzc21lbnQgYW5kIFBsYW4KUGF0aWVudCBpcyBwcmVzZW50aW5nIHdpdGggZnVsbC10aW1lIGVtcGxveW1lbnQgKGZpbmRpbmcpLiAKCiMjIFBsYW4KCg=="
+    } ]
+  },
+  "request": {
+    "method": "POST",
+    "url": "DiagnosticReport"
+  }
+}

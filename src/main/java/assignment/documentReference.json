@@ -1,0 +1,69 @@
+{
+  "fullUrl": "urn:uuid:9c392ec4-e932-e0d8-5259-9ab937a9cc2e",
+  "resource": {
+    "resourceType": "DocumentReference",
+    "id": "9c392ec4-e932-e0d8-5259-9ab937a9cc2e",
+    "meta": {
+      "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference" ]
+    },
+    "identifier": [ {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:uuid:ef8889aa-bbaa-4ceb-895e-308822c869bd"
+    } ],
+    "status": "superseded",
+    "type": {
+      "coding": [ {
+        "system": "http://loinc.org",
+        "code": "34117-2",
+        "display": "History and physical note"
+      }, {
+        "system": "http://loinc.org",
+        "code": "51847-2",
+        "display": "Evaluation+Plan note"
+      } ]
+    },
+    "category": [ {
+      "coding": [ {
+        "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+        "code": "clinical-note",
+        "display": "Clinical Note"
+      } ]
+    } ],
+    "subject": {
+      "reference": "urn:uuid:8c95253e-8ee8-9ae8-6d40-021d702dc78e"
+    },
+    "date": "1978-11-13T02:00:18.291+00:00",
+    "author": [ {
+      "reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999914519",
+      "display": "Dr. Wilmer32 Heidenreich818"
+    } ],
+    "custodian": {
+      "reference": "Organization?identifier=https://github.com/synthetichealth/synthea|3f44c95d-aa3d-3385-93f7-9b0bdecc52a6",
+      "display": "MASS LUNG AND ALLERGY PC"
+    },
+    "content": [ {
+      "attachment": {
+        "contentType": "text/plain; charset=utf-8",
+        "data": "CjE5NzgtMTEtMTMKCiMgQ2hpZWYgQ29tcGxhaW50Ck5vIGNvbXBsYWludHMuCgojIEhpc3Rvcnkgb2YgUHJlc2VudCBJbGxuZXNzCkFhcm9uNjk3CiBpcyBhIDM0IHllYXItb2xkIG5vbi1oaXNwYW5pYyB3aGl0ZSBtYWxlLiBQYXRpZW50IGhhcyBhIGhpc3Rvcnkgb2YgZnVsbC10aW1lIGVtcGxveW1lbnQgKGZpbmRpbmcpLCBzb2NpYWwgaXNvbGF0aW9uIChmaW5kaW5nKSwgc3RyZXNzIChmaW5kaW5nKS4KCiMgU29jaWFsIEhpc3RvcnkKUGF0aWVudCBpcyBtYXJyaWVkLiBQYXRpZW50IGlzIGFuIGFjdGl2ZSBzbW9rZXIgYW5kIGlzIGFuIGFsY29ob2xpYy4KIFBhdGllbnQgaWRlbnRpZmllcyBhcyBoZXRlcm9zZXh1YWwuCgpQYXRpZW50IGNvbWVzIGZyb20gYSBtaWRkbGUgc29jaW9lY29ub21pYyBiYWNrZ3JvdW5kLgogUGF0aWVudCBoYXMgY29tcGxldGVkIHNvbWUgY29sbGVnZSBjb3Vyc2VzLgpQYXRpZW50IGN1cnJlbnRseSBoYXMgTk8gSU5TVVJBTkNFLgoKIyBBbGxlcmdpZXMKTm8gS25vd24gQWxsZXJnaWVzLgoKIyBNZWRpY2F0aW9ucwpObyBBY3RpdmUgTWVkaWNhdGlvbnMuCgojIEFzc2Vzc21lbnQgYW5kIFBsYW4KUGF0aWVudCBpcyBwcmVzZW50aW5nIHdpdGggZnVsbC10aW1lIGVtcGxveW1lbnQgKGZpbmRpbmcpLiAKCiMjIFBsYW4KCg=="
+      },
+      "format": {
+        "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+        "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+        "display": "mimeType Sufficient"
+      }
+    } ],
+    "context": {
+      "encounter": [ {
+        "reference": "urn:uuid:d27a1722-203d-e9d1-3f0f-9bcf51f7ed60"
+      } ],
+      "period": {
+        "start": "1978-11-13T02:00:18+00:00",
+        "end": "1978-11-13T02:15:18+00:00"
+      }
+    }
+  },
+  "request": {
+    "method": "POST",
+    "url": "DocumentReference"
+  }
+}

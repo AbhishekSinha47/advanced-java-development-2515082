@@ -34,6 +34,7 @@ class VotingSystemTest {
         votingSystem.vote("Contestant Three");
         votingSystem.vote("Contestant Three");
 
+        //check if the first insertion to LinkedListHashMap is "Contestant One"
         assertEquals("Contestant One", votingSystem.getVotes().keySet().iterator().next());
     }
 

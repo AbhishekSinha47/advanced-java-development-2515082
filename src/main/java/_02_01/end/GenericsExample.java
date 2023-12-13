@@ -7,7 +7,7 @@ public class GenericsExample {
 
     public static void main(String[] args) {
 
-        List<String > shapes = new ArrayList<>();
+        List<String> shapes = new ArrayList<>();
         shapes.add("Circle");
         System.out.println(shapes.get(0));
         String circle = shapes.get(0);

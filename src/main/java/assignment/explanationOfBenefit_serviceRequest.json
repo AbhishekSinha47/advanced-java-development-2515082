@@ -1,0 +1,273 @@
+{
+
+  "fullUrl": "urn:uuid:0396b087-1858-9edc-7d37-3e1d28f354a5",
+  "resource": {
+    "resourceType": "ExplanationOfBenefit",
+    "id": "0396b087-1858-9edc-7d37-3e1d28f354a5",
+    "contained": [ {
+      "resourceType": "ServiceRequest",
+      "id": "referral",
+      "status": "completed",
+      "intent": "order",
+      "subject": {
+        "reference": "urn:uuid:8c95253e-8ee8-9ae8-6d40-021d702dc78e"
+      },
+      "requester": {
+        "reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999914519"
+      },
+      "performer": [ {
+        "reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999914519"
+      } ]
+    }, {
+      "resourceType": "Coverage",
+      "id": "coverage",
+      "status": "active",
+      "type": {
+        "text": "NO_INSURANCE"
+      },
+      "beneficiary": {
+        "reference": "urn:uuid:8c95253e-8ee8-9ae8-6d40-021d702dc78e"
+      },
+      "payor": [ {
+        "display": "NO_INSURANCE"
+      } ]
+    } ],
+    "identifier": [ {
+      "system": "https://bluebutton.cms.gov/resources/variables/clm_id",
+      "value": "9c776ce1-4909-bd3d-862f-0a312918861d"
+    }, {
+      "system": "https://bluebutton.cms.gov/resources/identifier/claim-group",
+      "value": "99999999999"
+    } ],
+    "status": "active",
+    "type": {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/claim-type",
+        "code": "institutional"
+      } ]
+    },
+    "use": "claim",
+    "patient": {
+      "reference": "urn:uuid:8c95253e-8ee8-9ae8-6d40-021d702dc78e"
+    },
+    "billablePeriod": {
+      "start": "1966-10-31T02:15:18+00:00",
+      "end": "1967-10-31T02:15:18+00:00"
+    },
+    "created": "1966-10-31T02:15:18+00:00",
+    "insurer": {
+      "display": "NO_INSURANCE"
+    },
+    "provider": {
+      "reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999914519"
+    },
+    "referral": {
+      "reference": "#referral"
+    },
+    "facility": {
+      "reference": "Location?identifier=https://github.com/synthetichealth/synthea|08770baf-f5e6-3a1a-af4f-1d8be70df56f",
+      "display": "MASS LUNG AND ALLERGY PC"
+    },
+    "claim": {
+      "reference": "urn:uuid:9c776ce1-4909-bd3d-862f-0a312918861d"
+    },
+    "outcome": "complete",
+    "careTeam": [ {
+      "sequence": 1,
+      "provider": {
+        "reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999914519"
+      },
+      "role": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/claimcareteamrole",
+          "code": "primary",
+          "display": "Primary Care Practitioner"
+        } ]
+      }
+    } ],
+    "diagnosis": [ {
+      "sequence": 1,
+      "diagnosisReference": {
+        "reference": "urn:uuid:8609343c-7ccd-a020-ab8b-379ebe4e2e20"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/ex-diagnosistype",
+          "code": "principal"
+        } ]
+      } ]
+    }, {
+      "sequence": 2,
+      "diagnosisReference": {
+        "reference": "urn:uuid:96d6dcdd-8694-f570-611c-1f2eca14a4e3"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/ex-diagnosistype",
+          "code": "principal"
+        } ]
+      } ]
+    }, {
+      "sequence": 3,
+      "diagnosisReference": {
+        "reference": "urn:uuid:95fd4de3-2433-a866-f9dd-c24383815c92"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/ex-diagnosistype",
+          "code": "principal"
+        } ]
+      } ]
+    } ],
+    "insurance": [ {
+      "focal": true,
+      "coverage": {
+        "reference": "#coverage",
+        "display": "NO_INSURANCE"
+      }
+    } ],
+    "item": [ {
+      "sequence": 1,
+      "category": {
+        "coding": [ {
+          "system": "https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd",
+          "code": "1",
+          "display": "Medical care"
+        } ]
+      },
+      "productOrService": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "162673000",
+          "display": "General examination of patient (procedure)"
+        } ],
+        "text": "General examination of patient (procedure)"
+      },
+      "servicedPeriod": {
+        "start": "1966-10-31T02:00:18+00:00",
+        "end": "1966-10-31T02:15:18+00:00"
+      },
+      "locationCodeableConcept": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/ex-serviceplace",
+          "code": "19",
+          "display": "Off Campus-Outpatient Hospital"
+        } ]
+      },
+      "encounter": [ {
+        "reference": "urn:uuid:b6c96767-0a76-9d09-7376-b62620228281"
+      } ]
+    }, {
+      "sequence": 2,
+      "diagnosisSequence": [ 1 ],
+      "category": {
+        "coding": [ {
+          "system": "https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd",
+          "code": "1",
+          "display": "Medical care"
+        } ]
+      },
+      "productOrService": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266934004",
+          "display": "Transport problems (finding)"
+        } ],
+        "text": "Transport problems (finding)"
+      },
+      "servicedPeriod": {
+        "start": "1966-10-31T02:00:18+00:00",
+        "end": "1966-10-31T02:15:18+00:00"
+      },
+      "locationCodeableConcept": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/ex-serviceplace",
+          "code": "19",
+          "display": "Off Campus-Outpatient Hospital"
+        } ]
+      }
+    }, {
+      "sequence": 3,
+      "diagnosisSequence": [ 2 ],
+      "category": {
+        "coding": [ {
+          "system": "https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd",
+          "code": "1",
+          "display": "Medical care"
+        } ]
+      },
+      "productOrService": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "422650009",
+          "display": "Social isolation (finding)"
+        } ],
+        "text": "Social isolation (finding)"
+      },
+      "servicedPeriod": {
+        "start": "1966-10-31T02:00:18+00:00",
+        "end": "1966-10-31T02:15:18+00:00"
+      },
+      "locationCodeableConcept": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/ex-serviceplace",
+          "code": "19",
+          "display": "Off Campus-Outpatient Hospital"
+        } ]
+      }
+    }, {
+      "sequence": 4,
+      "diagnosisSequence": [ 3 ],
+      "category": {
+        "coding": [ {
+          "system": "https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd",
+          "code": "1",
+          "display": "Medical care"
+        } ]
+      },
+      "productOrService": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266948004",
+          "display": "Has a criminal record (finding)"
+        } ],
+        "text": "Has a criminal record (finding)"
+      },
+      "servicedPeriod": {
+        "start": "1966-10-31T02:00:18+00:00",
+        "end": "1966-10-31T02:15:18+00:00"
+      },
+      "locationCodeableConcept": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/ex-serviceplace",
+          "code": "19",
+          "display": "Off Campus-Outpatient Hospital"
+        } ]
+      }
+    } ],
+    "total": [ {
+      "category": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+          "code": "submitted",
+          "display": "Submitted Amount"
+        } ],
+        "text": "Submitted Amount"
+      },
+      "amount": {
+        "value": 786.3299999999999,
+        "currency": "USD"
+      }
+    } ],
+    "payment": {
+      "amount": {
+        "value": 0.0,
+        "currency": "USD"
+      }
+    }
+  },
+  "request": {
+    "method": "POST",
+    "url": "ExplanationOfBenefit"
+  }
+}
